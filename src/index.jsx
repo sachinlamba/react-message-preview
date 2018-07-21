@@ -42,6 +42,7 @@ const defaultProps = {
       borderRadius: "10px"
     },
     removePreviewButtonStyle: {
+      cursor: "pointer",
       float: "right",
       position: "absolute",
       top: "-5px",
@@ -49,6 +50,7 @@ const defaultProps = {
       fontSize: "20px"
     },
     resetButton: {
+      cursor: "pointer",
       margin: "auto",
       padding: "0px 10px",
       borderRadius: "20px",
@@ -56,6 +58,7 @@ const defaultProps = {
       color: "white"
     },
     saveButton: {
+      cursor: "pointer",
       margin: "auto",
       padding:" 0px 10px",
       borderRadius: "20px",
@@ -80,13 +83,13 @@ class MessagePreviewer extends React.Component {     
     render() {
         const props = this.props || {};
         return [
-                <div style={props.backgroundStyle} onClick={() => props.removePreviewFunction}></div>,
+                <div style={props.backgroundStyle} onClick={props.removePreviewFunction}></div>,
                 <div style={props.messageStyle}>
-                  <div style={props.removePreviewButtonStyle} onClick={() => props.removePreviewFunction}>&times;</div>
+                  <div style={props.removePreviewButtonStyle} onClick={props.removePreviewFunction}>&times;</div>
                   <div>{props.messageText}</div>
                   <div style={{display: "flex"}}>
-                    <div style={props.resetButton} onClick={() => props.resetFunction}>{props.resetText}</div>
-                    <div style={props.saveButton} onClick={() => props.saveFunction}>{props.saveText}</div>
+                    <div style={props.resetButton} onClick={props.resetFunction}>{props.resetText}</div>
+                    <div style={props.saveButton} onClick={props.saveFunction}>{props.saveText}</div>
                   </div>
                 </div>
             ];
