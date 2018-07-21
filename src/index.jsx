@@ -20,12 +20,16 @@ const propTypes = {
 class MessagePreviewer extends React.Component {     
     render() {
         const props = this.props || {};
+        let titleDiv = [];
+        if(props.messageTitle){
+          titleDiv.push(<div className="message-title">{props.messageTitle}</div>);
+          titleDiv.push(<div className="horizontal-line"></div>);
+        }
         return [
                 <div style={props.backgroundStyle} className="blur-background" onClick={props.removePreviewFunction}></div>,
                 <div style={props.messageStyle} className="preview-div">
                   <div style={props.removePreviewButtonStyle} className="cross-button" onClick={props.removePreviewFunction}>&times;</div>
-                  <div className="message-title">{props.messageTitle}</div>
-                  <div className="horizontal-line"></div>
+                  {titleDiv}
                   <div className="message-text">{props.messageText}</div>
                   <div className="horizontal-line"></div>
                   <div className="footer-buttons" >

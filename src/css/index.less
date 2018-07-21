@@ -19,7 +19,7 @@
   left: 36%;
   top: 40%;
   font-size: 16px;
-  padding: 5px 0px 0px 0px;
+  padding: 5px 5px 0px 5px;
   border: 1px solid rgb(212, 212, 212);
   border-radius: 10px;
   .horizontal-line{
@@ -37,16 +37,24 @@
     cursor: pointer;
     float: right;
     position: absolute;
-    top: -5px;
-    right: 8px;
-    font-size: 20px;
+    top: 4px;
+    right: 5px;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+  }
+  .cross-button:hover{
+    border: 1px solid #d4d4d4;
+    color: white;
+    background-color: #d4d4d4;
   }
   .footer-buttons{
     display: flex;
     height: 50px;
     .button-style{
       width: 100px;
-      line-height: 20px;
+      line-height: 30px;
       cursor: pointer;
       margin: auto;
       padding: 0px 10px;
