@@ -10,8 +10,7 @@
   z-index: 999;
 }
 .preview-div{
-  min-width: 20%;
-  max-width: 90%;
+  width: 30%;
   text-align: center;
   position: fixed;
   z-index: 1000;
@@ -40,9 +39,8 @@
     top: 4px;
     right: 5px;
     border-radius: 50%;
-    height: 22px;
-    width: 22px;
-    text-align: center;
+    height: 18px;
+    width: 18px;
   }
   .cross-button:hover{
     border: 1px solid #d4d4d4;
@@ -74,4 +72,11 @@
       background: blue;
     }
   }
+}
+
+@media only screen and (max-width: 724px) {
+    .preview-div{
+      left: 18%;
+      width: 60%
+    }
 }

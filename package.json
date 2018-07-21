@@ -1,6 +1,6 @@
 {
     "name": "react-message-preview",
-    "version": "0.1.9",
+    "version": "0.1.10",
     "description": "A React Component - Browser centered Message box with blur background",
     "main": "./lib/index.js",
     "license": "MIT",
