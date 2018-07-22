@@ -130,6 +130,7 @@ render() {
 
 *All Props are optional except closePreview function(unless u want my preview to be always on ur screen)* :smirk:
 
+*As you can see, we can send messageText as Array also.* [See this to view more on this](https://stackoverflow.com/questions/33381029/react-how-to-pass-html-tags-in-props)
 
 # Help
 Published [Guide](http://jasonwatmore.com/post/2018/04/14/react-npm-how-to-publish-a-react-component-to-npm) :heart_eyes:
