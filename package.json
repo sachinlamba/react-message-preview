@@ -1,11 +1,16 @@
 {
     "name": "react-message-preview",
-    "version": "0.1.11",
+    "version": "0.1.12",
     "description": "A React Component - Browser centered Message box with blur background",
     "main": "./lib/index.js",
     "license": "MIT",
     "scripts": {
         "build": "webpack"
+    },
+    "author": "Sachin Lamba <lamba92sachin@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sachinlamba/react-message-preview"
     },
     "peerDependencies": {
         "prop-types": "^15.6.0",

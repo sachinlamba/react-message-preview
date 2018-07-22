@@ -1,6 +1,6 @@
 export default {
   globalVariable: {
-    messageText: "Pass your text with props Name as messageText...",
+    messageText: "Pass your msg here.",
     resetText: "Cancel",
     saveText: "Ok",
     removePreviewFunction: () => {
