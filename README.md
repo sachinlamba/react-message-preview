@@ -3,12 +3,12 @@ A React Component - Browser centered Message box with blur background.
 
 ### On Large Screen
 <div align="center">
-  <img src="https://github.com/sachinlamba/react-message-preview/blob/master/previewLargeScreen.PNG" />
+  <img src="https://raw.githubusercontent.com/sachinlamba/react-message-preview/master/previewLargeScreen.PNG" />
 </div>
 
 ### On Small Screen
 <div align="center">
-  <img src="https://github.com/sachinlamba/react-message-preview/blob/master/previewSmallScreen.PNG" />
+  <img src="https://raw.githubusercontent.com/sachinlamba/react-message-preview/master/previewSmallScreen.PNG" />
 </div>
 
 ## Examples
@@ -58,7 +58,7 @@ class App extends Component {
               messageText={"Counter : " + self.state.count}
               resetText="Decrement"
               saveText="Increment"
-              removePreviewFunction={this.removePreviewFunction}
+              closePreview={this.removePreviewFunction}
               saveFunction={self.increment}
               resetFunction={self.decrement}
             />
@@ -97,7 +97,7 @@ render() {
               resetText="Decrement"
               saveText="Increment"
               resetFlagHide={true}
-              removePreviewFunction={this.removePreviewFunction}
+              closePreview={this.removePreviewFunction}
               saveFunction={self.increment}
               resetFunction={self.decrement}
             />
